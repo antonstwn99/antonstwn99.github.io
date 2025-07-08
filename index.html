@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRM Studio – Jasa Multimedia</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body style="background: url('assets/images/cover.png') no-repeat center center fixed; background-size: cover;">
+    <button id="toggleMode" class="toggle-btn">🌙</button>
+    <button id="muteBtn" class="toggle-btn">🔊</button>
+
+    <div class="logo-container">
+        <img src="assets/images/logohima.png" alt="Logo TRM" class="logo-trm" />
+    </div>
+
+    <header class="main-header">
+    <h1 class="hero-title">TRM Studio</h1>
+    <p>Layanan Multimedia oleh Mahasiswa Teknologi Rekayasa Multimedia Politeknik Hasnur</p>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#testimoni">Testimoni</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#form">Pesan</a></li>
+        </ul>
+    </nav>
+
+    <section class="fade-in">
+        <h2>Layanan Multimedia Kreatif oleh Mahasiswa TRM</h2>
+        <p>Desain. Produksi. Dokumentasi. Semua dalam satu tim profesional muda.</p>
+    </section>
+
+    <section id="layanan" class="fade-in">
+        <h2><i class="fas fa-cogs"></i> Layanan Kami</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="assets/images/poster.png" alt="Desain Poster" />
+                <div class="card-content">
+                    <h3>Desain Poster</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/feedig.png" alt="Desain Feed IG" />
+                <div class="card-content">
+                    <h3>Desain Feed IG</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/banner.png" alt="Desain Banner" />
+                <div class="card-content">
+                    <h3>Desain Banner</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/thumbnail.jpg" alt="Thumbnail Video" />
+                <div class="card-content">
+                    <h3>Thumbnail Video</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/fotostudio.jpg" alt="Foto Studio" />
+                <div class="card-content">
+                    <h3>Foto Studio</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/timkreatif.jpg" alt="Tim Kreatif Event" />
+                <div class="card-content">
+                    <h3>Tim Kreatif Event</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portofolio" class="fade-in">
+        <h2><i class="fas fa-images"></i> Contoh Portofolio</h2>
+        <div class="card-container">
+            <img src="assets/images/portofoliohima.png" alt="Portofolio IG" />
+            <img src="assets/images/portofolioyt.png" alt="Portofolio YouTube" />
+        </div>
+    </section>
+
+    <section id="testimoni" class="fade-in">
+        <h2><i class="fas fa-comments"></i> Testimoni Klien</h2>
+        <p>"Pelayanan sangat profesional dan hasilnya memuaskan!" – Udin</p>
+        <p>"Kontennya kreatif banget, cocok buat promosi kampus!" – Caca</p>
+    </section>
+
+    <section id="video" class="fade-in">
+        <h2><i class="fas fa-video"></i> Video Proyek</h2>
+        <div class="youtube-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/twAE2718u_o?si=6kk6uxj1LmR3ECPx" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="form" class="fade-in">
+        <h2><i class="fas fa-envelope"></i> Pesan Jasa</h2>
+        <form onsubmit="return redirectToWhatsApp();">
+            <input type="text" id="name" placeholder="Nama Anda" required />
+            <input type="text" id="layanan" placeholder="Layanan yang diinginkan" required />
+            <button type="submit">Kirim ke WhatsApp</button>
+        </form>
+        <p id="output"></p>
+    </section>
+
+    <audio id="background-music" autoplay loop>
+  <source src="assets/audio/audio.mp3" type="audio/mpeg">
+  Browser Anda tidak mendukung elemen audio.
+</audio>
+
+
+    <footer>
+        <p>Alamat: Jl. Brigjen H. Hasan Basri, Handil Bakti Ray V, Kec. Alalak, Kab. Barito Kuala, Prov. Kalimantan Selatan</p>
+        <p>Email: himatrmpolhas@gmail.com | Instagram: hima_trmpolhas</p>
+        <p>Website ini dikembangkan oleh Mahasiswa TRM Politeknik Hasnur</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
